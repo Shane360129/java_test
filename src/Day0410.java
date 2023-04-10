@@ -56,7 +56,7 @@ public class Day0410 {
         map.put(30, "香蕉");
         map.put(50, "芒果");
         map.put(25, "西瓜");
-        System.out.println("最便宜的水果是：" + map.get(map.firstKey()) + " " + "價格是：" + map.firstKey());
+        System.out.printf("最便宜的水果是：%4s 價格是： %4d ", map.get(map.firstKey()), map.firstKey());
         System.out.println("最貴的水果是：" + map.get(map.lastKey()) + " " +"價格是：" + map.lastKey());
 
         for (Entry<Integer, String> item : map.entrySet()) {
