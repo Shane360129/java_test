@@ -26,11 +26,12 @@ public class Bank {
             if (balance < withdrawAmount) {
                 balance += amount;
             }else {
+                notify();
                 break;
             }
             System.out.println("目前餘額：" + balance);
             System.out.println("存款完成 ");
-            notify();
+//            notify();
         }
     }
 }

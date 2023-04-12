@@ -42,7 +42,7 @@ public class Day0411 {   //執行緒
         t1.start();
         Thread t2 = new Thread(){
             public void run(){
-                bank.deposit(4000);
+                bank.deposit(500);
                 }
             };
             t2.start();
