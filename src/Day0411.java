@@ -36,16 +36,16 @@ public class Day0411 {   //執行緒
         Bank bank = new Bank();
         Thread t1 = new Thread() {
             public void run() {
-                bank.withdraw(15000);
+                bank.withdraw(20000);
             }
         };
         t1.start();
-            Thread t2 = new Thread(){
-                public void run(){
-                    bank.deposit(2000);
+        Thread t2 = new Thread(){
+            public void run(){
+                bank.deposit(4000);
                 }
             };
-        t2.start();
+            t2.start();
     }
 }
 
